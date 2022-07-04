@@ -76,10 +76,7 @@ async function getPublicKey(keyPairId: string): Promise<Buffer> {
 // Finds the compressed form of the public key (Only R is needed for EC keys, 02 / 03 prefix depending on S even or odd)
 function compressPubKey(publicKey: Buffer): Buffer {
     const header =
-        parseInt(
-            publicKey.toString("hex").slice(publicKey.length*2 - 2, publicKey.length*2),
-            16
-        ) % 2
+        parseInt(publicKey.toString("hex").slice(publicKey.length*2 - 2, publicKey.length*2), 16) % 2
             ? "03"
             : "02";
     return Buffer.from(header + publicKey.toString("hex").slice(2, 66), "hex");
