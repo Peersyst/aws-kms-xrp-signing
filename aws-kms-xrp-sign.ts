@@ -111,10 +111,7 @@ async function findXrpSig(transaction: Transaction, pubKey: string) {
     }
 
     const signatureBytes = (new Signature({ r: r.toString(16), s: s.toString(16) })).toDER();
-    const signature = Array.from(signatureBytes, (byteValue: any) => {
-        const hex = byteValue.toString(16).toUpperCase()
-        return hex.length > 1 ? hex : `0${hex}`
-      }).join('')
+    const signature = Buffer.from(signatureBytes).toString("hex");
 
     txToSignAndEncode.TxnSignature = signature;
 
