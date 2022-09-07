@@ -15,5 +15,10 @@
         "incremental": true,
         "skipLibCheck": true
     },
-    "include": ["**/*"]
+    "files": [
+        "index.ts"
+    ],
+    "include": [
+        "src/**/*.ts"
+    ]
 }

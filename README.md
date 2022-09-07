@@ -1,5 +1,5 @@
-# AWS KMS based Ripple Tx Signing
-This repo shows how to sign a Ripple transaction using AWS KMS. 
+# AWS KMS based XRPL Tx Signing
+This repo shows how to sign an XRPL transaction using AWS KMS. 
 
 ## Prep
 1. Create ECDSA secp256k1 key in AWS KMS
