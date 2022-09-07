@@ -1,8 +1,8 @@
 {
   "name": "xrpl-kms-sign",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "rm -rf dist && tsc"
   },
@@ -19,6 +19,16 @@
   "devDependencies": {
     "typescript": "^4.8.2"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Peersyst/aws-kms-xrp-signing"
+  },
+  "files": [
+    "README.md",
+    "dist/src/",
+    "dist/index.js",
+    "dist/index.js.map"
+  ],
   "keywords": [
     "kms",
     "ripple",
