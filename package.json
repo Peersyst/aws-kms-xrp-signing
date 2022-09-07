@@ -1,5 +1,5 @@
 {
-  "name": "aws-kms-xrpl",
+  "name": "xrpl-kms-sign",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -15,6 +15,9 @@
     "ripple-address-codec": "4.2.4",
     "xrpl": "2.3.1",
     "xrpl-accountlib": "1.5.2"
+  },
+  "devDependencies": {
+    "typescript": "^4.8.2"
   },
   "keywords": [
     "kms",

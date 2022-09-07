@@ -1,4 +1,4 @@
-import { Client, Transaction, Wallet, xrpToDrops, verifySignature } from "xrpl";
+import { Client, Wallet, xrpToDrops, verifySignature } from "xrpl";
 import { XrplKmsService } from "./src/XrplKmsService";
 
 // Fill in with your AWS credentials
