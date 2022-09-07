@@ -1,5 +1,5 @@
 import { Client, Wallet, xrpToDrops, verifySignature } from "xrpl";
-import { XrplKmsService } from "./src/XrplKmsService";
+import { XrplKmsService } from "./src/XrplKmsService"; // import from "xrpl-kms" outside the package
 
 // Fill in with your AWS credentials
 const awsAccessKey = "";
