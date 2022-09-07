@@ -16,6 +16,12 @@ to install the npm module on your typescript or node project run:
 
 After that is done, we can start using the package. We will first need to get the xrpl address generated from the KMS public key, and fund the account with at least 10xrp to activate it. Then we can start signing transactions. There is example code for both funding an account and signing transactions in the example.ts file. You can fill in the aws parameters and run it with ts-node to try it yourself!
 
+## Technical explanation
+
+I made a post about how the package works with technical explanations and some extra explanations on configuring the KMS keys. You can find it here:
+
+https://dev.to/shierve/signing-xrpl-transactions-with-aws-kms-30ao
+
 ## Example: Funding the KMS account
 
 ```typescript
